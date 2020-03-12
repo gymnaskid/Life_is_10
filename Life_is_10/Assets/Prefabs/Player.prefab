@@ -146,3 +146,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpHeight: 6.5
+  canControl: 1
