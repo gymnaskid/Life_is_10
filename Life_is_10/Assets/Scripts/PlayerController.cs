@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
         //if the player presses space, we want to jump
         if (!isJumping &&  (Input.GetKeyDown(KeyCode.Space) || Input.GetButtonDown("btnX")))
         {
-            myBody.AddForce(Vector2.up * jumpHeight);
+            myBody.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);
             isJumping = true; //set is jumping to true as this may alter how the player can move or what they can do in the future
            
         }
