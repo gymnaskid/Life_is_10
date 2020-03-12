@@ -13,15 +13,10 @@ public class LevelEnd : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Hit");
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("Player");
+            
             LL.LoadNextLevel();
-        }
-        else
-        {
-            Debug.Log("other");
         }
     }
 }
