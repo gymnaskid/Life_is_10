@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         if (canControl)
         {
             //only using x axis because you can only move left/right 
-            moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), 0).normalized;
+            moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
             if (moveInput != Vector2.zero)
             {
                 myBody.velocity = new Vector2(moveInput.x * moveSpeed, myBody.velocity.y);
