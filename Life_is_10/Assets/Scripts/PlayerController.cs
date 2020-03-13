@@ -8,12 +8,13 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight; //How high we want to jump
     public bool canControl;
     public bool canWallJump; //can the player wall jump
+    public bool isJumping; //needs to be public so it can be set when changinf views
 
     private Rigidbody2D myBody; //the rigid body that will be used to move the player
     
     private Vector2 moveInput; //the direction the player is moving in
    // private bool isMoving; //whether the player is moving or not
-    private bool isJumping;
+    
     private bool wallJump;
     private float PlatformSpeed;
     private float speed;
