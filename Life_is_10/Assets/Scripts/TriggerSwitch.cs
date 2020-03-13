@@ -17,7 +17,7 @@ public class TriggerSwitch : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             VC.SwitchView();
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
         }
     }
 }

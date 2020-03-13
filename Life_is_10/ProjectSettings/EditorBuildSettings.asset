@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/8AM.unity
     guid: 03eacd052e0ef334e96a4f8b23e55feb
+  - enabled: 1
+    path: Assets/Scenes/9AM.unity
+    guid: 3f768a9d642c18e41a87334fab2d9353
   m_configObjects: {}

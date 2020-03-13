@@ -49,16 +49,19 @@ public class ViewController : MonoBehaviour
     {
         if (isOldView)
         {
-            //turn on the young view
+          
             youngView.SetActive(true);
+            youngPlayer.SetActive(true);
+
             //Set the young player to where the old player is
             youngPlayer.transform.position = new Vector3(oldPlayer.transform.position.x, oldPlayer.transform.position.y, youngPlayer.transform.position.z);
+            youngPlayer.GetComponent<Rigidbody2D>().velocity = oldPlayer.GetComponent<Rigidbody2D>().velocity;
             youngPlayer.GetComponent<PlayerController>().isJumping = oldPlayer.GetComponent<PlayerController>().isJumping;
-            youngPlayer.SetActive(true);
-            cam.Follow = youngPlayer.transform;
+            
             //turn off the old view and old player
             oldView.SetActive(false);
             oldPlayer.SetActive(false);
+            cam.Follow = youngPlayer.transform;
 
             isOldView = false;
         }
@@ -66,11 +69,12 @@ public class ViewController : MonoBehaviour
         {
             //turn on old view
             oldView.SetActive(true);
-
-            oldPlayer.transform.position = new Vector3(youngPlayer.transform.position.x, youngPlayer.transform.position.y, oldPlayer.transform.position.z);
-            oldPlayer.GetComponent<PlayerController>().isJumping = youngPlayer.GetComponent<PlayerController>().isJumping;
             oldPlayer.SetActive(true);
 
+            oldPlayer.transform.position = new Vector3(youngPlayer.transform.position.x, youngPlayer.transform.position.y, oldPlayer.transform.position.z);
+            oldPlayer.GetComponent<Rigidbody2D>().velocity = youngPlayer.GetComponent<Rigidbody2D>().velocity;
+            oldPlayer.GetComponent<PlayerController>().isJumping = youngPlayer.GetComponent<PlayerController>().isJumping;
+           
             //turn off youngview
             youngView.SetActive(false);
             youngPlayer.SetActive(false);
@@ -78,5 +82,12 @@ public class ViewController : MonoBehaviour
 
             isOldView = true;
         }
+    }
+
+    private void SetSwitch(GameObject Use, GameObject Set)
+    {
+        Set.transform.position = new Vector3(Use.transform.position.x, Use.transform.position.y, Use.transform.position.z);
+        Set.GetComponent<Rigidbody2D>().velocity = Set.GetComponent<Rigidbody2D>().velocity;
+        Set.GetComponent<PlayerController>().isJumping = Use.GetComponent<PlayerController>().isJumping;     
     }
 }
