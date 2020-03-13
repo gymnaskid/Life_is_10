@@ -36,7 +36,6 @@ public class PlayerController : MonoBehaviour
 
             speed = PlatformSpeed + (moveInput.x * moveSpeed);
 
-            Debug.Log(speed);
             if (moveInput != Vector2.zero || onPlatform)
             {
                 myBody.velocity = new Vector2(speed, myBody.velocity.y);
