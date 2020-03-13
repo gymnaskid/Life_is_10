@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: 308c598c428583f4fa16f562260db5c1
+guid: b510d3a71bbf66f499d58ec57d5a951e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4144769348825779723
-    second: terrain_ph_0
-  - first:
-      213: 3456787115813892153
-    second: terrain_ph_0
-  - first:
-      213: -4218029989102598109
-    second: terrain_ph_1
-  - first:
-      213: -3585475570784787466
-    second: terrain_ph_1
-  - first:
-      213: -6810793532598244470
-    second: terrain_ph_2
-  - first:
-      213: -8564787345525134976
-    second: terrain_ph_3
+      213: -714730616555645820
+    second: old_player_ph_0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -78,7 +63,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 64
+    maxTextureSize: 32
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -90,7 +75,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 64
+    maxTextureSize: 32
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -104,7 +89,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: terrain_ph_0
+      name: old_player_ph_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,35 +97,14 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 930fb362199f8ff20800000000000000
-      internalID: 3456787115813892153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: terrain_ph_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 4
-        width: 16
-        height: 8
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f3288c07f4dd3ec0800000000000000
-      internalID: -3585475570784787466
+      spriteID: 484da128a44c416f0800000000000000
+      internalID: -714730616555645820
       vertices: []
       indices: 
       edges: []
