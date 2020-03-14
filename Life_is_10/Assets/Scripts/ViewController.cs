@@ -11,6 +11,8 @@ public class ViewController : MonoBehaviour
     public GameObject youngPlayer;
     public GameObject oldPlayer;
 
+    public bool canSwitch;
+
     public CinemachineVirtualCamera cam;
 
     public bool isOldView; //wheter we are currently looking at the old view
@@ -36,13 +38,16 @@ public class ViewController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+        if(canSwitch)
         {
-            SwitchView();
+            if(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetButtonDown("btnSqu"))
+            {
+                SwitchView();
 
+            }
         }
-        */
+        
+        
     }
 
     public void SwitchView()
