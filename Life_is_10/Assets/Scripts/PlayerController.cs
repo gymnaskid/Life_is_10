@@ -11,20 +11,25 @@ public class PlayerController : MonoBehaviour
     public bool isJumping; //needs to be public so it can be set when changinf views
 
     private Rigidbody2D myBody; //the rigid body that will be used to move the player
-    
+    private Animator anim;
+
     private Vector2 moveInput; //the direction the player is moving in
-   // private bool isMoving; //whether the player is moving or not
+    private Vector2 lastMove; //whether the player is moving or not
+    private bool isMoving;
     
     private bool wallJump;
     private float PlatformSpeed;
     private float speed;
     private bool onPlatform;
+
  
 
     // Start is called before the first frame update
     void Start()
     {
-        myBody = GetComponent<Rigidbody2D>();  
+        myBody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        lastMove = new Vector2(1, 0);
     }
 
     // Update is called once per frame
@@ -34,17 +39,19 @@ public class PlayerController : MonoBehaviour
         {
             //only using x axis because you can only move left/right 
             moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), 0);
-
+           
             speed = PlatformSpeed + (moveInput.x * moveSpeed);
 
             if (moveInput != Vector2.zero || onPlatform)
             {
                 myBody.velocity = new Vector2(speed, myBody.velocity.y);
+                lastMove = moveInput;
+                isMoving = true;
             }
             else //if no left/right inputs stop the horizontal movement, but keep any vertical movement
             {
                 myBody.velocity = new Vector2(0.0f, myBody.velocity.y);
-               // isMoving = false;
+                isMoving = false;
             }
 
             //if the player presses space, we want to jump
@@ -60,6 +67,11 @@ public class PlayerController : MonoBehaviour
                 }
                 isJumping = true; //set is jumping to true as this may alter how the player can move or what they can do in the future
             }
+
+            //set vars for animations
+            anim.SetFloat("lastMove", lastMove.x);
+            anim.SetBool("isMoving", isMoving);
+
         }
     }
 

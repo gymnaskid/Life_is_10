@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7535069037837808034}
   - component: {fileID: 4415076027863342605}
   - component: {fileID: 4494327956368144894}
+  - component: {fileID: 3345913231575018352}
   m_Layer: 0
   m_Name: YoungPlayer
   m_TagString: Player
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8528412138668253201, guid: 0b5b72bddf8ad3b49a60b99bbf92d4ac,
+  m_Sprite: {fileID: 9085848204190756253, guid: 1544f82b49a855c4fb3643cbfca4ff69,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -119,18 +120,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.005109787, y: -0.00000011920929}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.5, y: 0.875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.51967716, y: 0.86714435}
   m_EdgeRadius: 0
 --- !u!114 &4494327956368144894
 MonoBehaviour:
@@ -148,3 +149,23 @@ MonoBehaviour:
   jumpHeight: 6.5
   canControl: 1
   canWallJump: 1
+  isJumping: 0
+--- !u!95 &3345913231575018352
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8148177847272013231}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d01d2cbc58df17f48ac903055cecf084, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

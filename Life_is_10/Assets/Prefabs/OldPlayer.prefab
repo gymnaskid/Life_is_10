@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6166260889314487952}
   - component: {fileID: 1330177439148897576}
   - component: {fileID: 1641962321142353327}
+  - component: {fileID: 123454563}
   m_Layer: 0
   m_Name: OldPlayer
   m_TagString: Player
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -714730616555645820, guid: b510d3a71bbf66f499d58ec57d5a951e,
+  m_Sprite: {fileID: -1500184262143133066, guid: 43566cf9f4d41e845aa5dbd9d3f36bc7,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -102,7 +103,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.5, y: 0.875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -148,3 +149,23 @@ MonoBehaviour:
   jumpHeight: 4
   canControl: 1
   canWallJump: 0
+  isJumping: 0
+--- !u!95 &123454563
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403065846882656845}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f58144ed2a13bde458ad80f35b8ea40f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
