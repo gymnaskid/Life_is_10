@@ -13949,6 +13949,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 483106380546110043, guid: a1ad2d9e564008b40b901442e8c7ba86,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.86586815
+      objectReference: {fileID: 0}
+    - target: {fileID: 483106380546110043, guid: a1ad2d9e564008b40b901442e8c7ba86,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.29784477
+      objectReference: {fileID: 0}
     - target: {fileID: 483106380546110044, guid: a1ad2d9e564008b40b901442e8c7ba86,
         type: 3}
       propertyPath: moveSpeed
@@ -14063,11 +14073,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 483106380546110043, guid: a1ad2d9e564008b40b901442e8c7ba86,
-        type: 3}
-      propertyPath: m_UsedByEffector
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 483106380546110044, guid: a1ad2d9e564008b40b901442e8c7ba86,
         type: 3}
       propertyPath: moveSpeed
@@ -14077,6 +14082,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MovingPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 483106381741919518, guid: a1ad2d9e564008b40b901442e8c7ba86,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1621572117
+      objectReference: {fileID: 0}
+    - target: {fileID: 483106381741919518, guid: a1ad2d9e564008b40b901442e8c7ba86,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1ad2d9e564008b40b901442e8c7ba86, type: 3}

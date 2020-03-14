@@ -42,11 +42,16 @@ public class PlayerController : MonoBehaviour
            
             speed = PlatformSpeed + (moveInput.x * moveSpeed);
 
-            if (moveInput != Vector2.zero || onPlatform)
+            if (moveInput != Vector2.zero)
+            {
+                isMoving = true;
+                lastMove = moveInput;
+                myBody.velocity = new Vector2(speed, myBody.velocity.y);
+            }
+            else if(onPlatform)
             {
                 myBody.velocity = new Vector2(speed, myBody.velocity.y);
-                lastMove = moveInput;
-                isMoving = true;
+                isMoving = false;
             }
             else //if no left/right inputs stop the horizontal movement, but keep any vertical movement
             {

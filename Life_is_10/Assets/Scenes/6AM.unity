@@ -506,8 +506,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4494327956368144894, guid: 25bd4d79332cbb94aba094884b117fb9,
         type: 3}
+      propertyPath: canWallJump
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4494327956368144894, guid: 25bd4d79332cbb94aba094884b117fb9,
+        type: 3}
+      propertyPath: isJumping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4494327956368144894, guid: 25bd4d79332cbb94aba094884b117fb9,
+        type: 3}
+      propertyPath: canControl
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4494327956368144894, guid: 25bd4d79332cbb94aba094884b117fb9,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 4.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4494327956368144894, guid: 25bd4d79332cbb94aba094884b117fb9,
+        type: 3}
       propertyPath: jumpHeight
-      value: 6.2
+      value: 6.4
       objectReference: {fileID: 0}
     - target: {fileID: 8148177847272013231, guid: 25bd4d79332cbb94aba094884b117fb9,
         type: 3}

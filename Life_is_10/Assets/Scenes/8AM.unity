@@ -3519,6 +3519,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelEnd
       objectReference: {fileID: 0}
+    - target: {fileID: 623467295390692222, guid: c75cf17f68d85d7438495ad4a686126f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 623467295390692223, guid: c75cf17f68d85d7438495ad4a686126f,
         type: 3}
       propertyPath: m_Offset.x
@@ -12302,7 +12307,7 @@ PrefabInstance:
     - target: {fileID: 5464690944935583069, guid: b6ea1aed52fa3fb4e94f885cb1468370,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5464690944935583070, guid: b6ea1aed52fa3fb4e94f885cb1468370,
         type: 3}
