@@ -17,6 +17,9 @@ public class ViewController : MonoBehaviour
 
     public bool isOldView; //wheter we are currently looking at the old view
 
+
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,16 +41,14 @@ public class ViewController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if the player can switch between views loof for the input to do so
         if(canSwitch)
         {
             if(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetButtonDown("btnSqu"))
             {
                 SwitchView();
-
             }
-        }
-        
-        
+        }   
     }
 
     public void SwitchView()
