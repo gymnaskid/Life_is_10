@@ -3653,6 +3653,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 299346756}
     m_Modifications:
+    - target: {fileID: 698940384117941000, guid: e9cb497448bc63b46ac1101594640d72,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 858245769
+      objectReference: {fileID: 0}
+    - target: {fileID: 698940384117941000, guid: e9cb497448bc63b46ac1101594640d72,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 698940384117941002, guid: e9cb497448bc63b46ac1101594640d72,
         type: 3}
       propertyPath: m_IsActive
@@ -12032,6 +12042,16 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[213].second.m_AllTileFlags
       value: 1073741825
       objectReference: {fileID: 0}
+    - target: {fileID: 1311400162755210146, guid: 7beeeefb40379304c9def38c97b64503,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1621572117
+      objectReference: {fileID: 0}
+    - target: {fileID: 1311400162755210146, guid: 7beeeefb40379304c9def38c97b64503,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7beeeefb40379304c9def38c97b64503, type: 3}
 --- !u!4 &651554109 stripped
@@ -12270,6 +12290,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1127874391, guid: b6ea1aed52fa3fb4e94f885cb1468370, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5464690944935583069, guid: b6ea1aed52fa3fb4e94f885cb1468370,
         type: 3}
       propertyPath: m_Name
@@ -18936,6 +18960,16 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[49].second.m_TileSpriteIndex
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1311400162755210146, guid: 7beeeefb40379304c9def38c97b64503,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1621572117
+      objectReference: {fileID: 0}
+    - target: {fileID: 1311400162755210146, guid: 7beeeefb40379304c9def38c97b64503,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1311400162755210148, guid: 7beeeefb40379304c9def38c97b64503,
         type: 3}
       propertyPath: m_IsActive
@@ -19251,6 +19285,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 45564509}
     m_Modifications:
+    - target: {fileID: 698940384117941000, guid: e9cb497448bc63b46ac1101594640d72,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1621572117
+      objectReference: {fileID: 0}
+    - target: {fileID: 698940384117941000, guid: e9cb497448bc63b46ac1101594640d72,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 698940384117941002, guid: e9cb497448bc63b46ac1101594640d72,
         type: 3}
       propertyPath: m_IsActive
