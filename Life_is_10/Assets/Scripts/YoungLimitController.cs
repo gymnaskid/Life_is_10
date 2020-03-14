@@ -33,7 +33,6 @@ public class YoungLimitController : MonoBehaviour
            // Debug.Log("isyoung " + isYoung);
             timerCounter -= Time.deltaTime; //countdown
 
-
             //if the timer hits 0 swtich back to the old view
            // Debug.Log("Timer: " + timerCounter);
             if (timerCounter < 0f)
