@@ -20,6 +20,7 @@ public class YoungLimitController : MonoBehaviour
     void Start()
     {
         VC = FindObjectOfType<ViewController>();
+        Debug.Log(slider);
         slider.maxValue = youngTimer;
         slider.value = youngTimer;
     }
